@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --text-color: #333;
+    --background-color: #f5f6fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.6;
+    font-weight: bold;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color);
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.page {
+    padding: 2rem;
+}
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.75)), url("../assests/scrimgs/college_logo.png");
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 90%;
+    animation:chbkgdimg 30s linear infinite;
+}
+
+.content {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.slider{
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.slider-p{
+    animation:scroll 15s linear infinite;
+    width: fit-content;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.small-size{
+    font-size: 10px;
+}
+
+@keyframes scroll {
+    0% { left: 100%; }
+    100% { left: -30%; }
+}
+@keyframes blink {
+    0%, 100%{ opacity: 0; }
+    50%{ opacity: 1; }
+}
+@keyframes chbkgdimg {
+    100%,0%{ 
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.75)),url("../assests/scrimgs/college_logo.png");
+    }
+    25%{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.75)),url("../assests/scrimgs/1742879650106.jpg");
+    }
+    50%{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.75)),url("../assests/scrimgs/1742879650014.jpg");
+    }
+    75%{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.75)),url("../assests/scrimgs/1743019431019.jpg");
+    }    
+}

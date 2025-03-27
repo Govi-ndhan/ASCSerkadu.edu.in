@@ -1,0 +1,37 @@
+.content {
+    max-width: 1800px;
+    margin: 10vh auto;
+    padding: 2rem;
+}
+.faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.faculty-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    height: 110px;
+    overflow: hidden;
+    transition: height 1s;
+    width: auto;
+}
+.faculty-card:hover{
+    height: 260px;
+}
+.faculty-card.commerce:hover{
+    height: 180px;
+}
+.faculty-card.maths:hover{
+    height: 240px;
+}
+@media (max-width: 768px) {
+    .faculty-card{
+        width: 270px;
+    }
+}

@@ -1,0 +1,29 @@
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.course-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    height: 100px;
+    overflow: hidden;
+    transition: height 1s;
+}
+.course-card:hover{
+    height: 25vh;
+}
+.course-card.single:hover{
+    height: 22vh;
+}
+@media (max-width: 768px) {
+    .course-card{
+        height: 120px;
+    }
+}

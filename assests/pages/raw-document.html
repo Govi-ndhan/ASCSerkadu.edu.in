@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art&apos;s &amp; Science College, Serkadu</title>
+    <link rel="icon" type="image/x-icon" href="../scrimgs/college_logo.png">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/responsive.css">
+    <link rel="stylesheet" href="../../styles/document.css">
+    <script src="../../script/index.js"></script>
+    <script src="../../script/document.js"></script>
+</head>
+<body>
+    <nav id="mainNav">
+        <div class="logo">Governtment Art's &amp; Science College, Serkadu</div>
+        <button class="mobile-menu" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links">
+            <li><a href="javascript:void(0)" onclick ="location.href = '../../index.html'" class="active">Home</a></li>
+            <li><a href="javascript:void(0)" onclick ="location.href = 'courses.html'">Courses</a></li>
+            <li><a href="javascript:void(0)" onclick ="location.href = 'faculty.html'">Faculty</a></li>
+            <li><a href="javascript:void(0)" onclick ="location.href = '../scrimgs/gallery/gallery.php'">Gallery</a></li>
+            <li><a href="javascript:void(0)" onclick ="location.href = 'document.html'">Login</a></li>
+            <li><a href="javascript:void(0)" onclick ="location.href = 'contact.html'">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="access">
+            <div class="content">
+                  <h2>Login</h2>
+                <div  class="">
+                    <form id="contactForm" onsubmit="access(event)">
+                        <div class="form-group">
+                            <label for="name">Username :</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Password :</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="doc" class="page">
+            <div class="content">
+                <h2>Document</h2>
+                <div class="sub-content">
+                    <li><a href="">doc1</a></li>
+                    <li><a href="">doc2</a></li>
+                    <li><a href="">doc3</a></li>
+                </div>
+                <p>If You Want to the Fulfilled Documents <a href="document.html">Click Here</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Governtment Art's &amp; Science College, Serkadu. All rights reserved.</p>
+        <p class="small-size">Powered By Governtment Art&apos;s &amp; Science College Students, Serkadu.</p>
+    </footer>
+
+</body>
+</html>

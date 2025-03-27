@@ -1,0 +1,29 @@
+.content {
+    max-width: 1800px;
+    margin: 10vh auto;
+    padding: 2rem;
+}
+
+.sub-content{
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+span{
+    width: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+}
+img{
+    margin: 0.7rem;
+}
+@media (max-width: 600px) {
+    .sub-content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    img{
+        width: 100%;
+    }
+}
